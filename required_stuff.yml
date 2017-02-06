@@ -1,0 +1,11 @@
+---
+- hosts: all
+  user: vagrant
+  become: true
+  gather_facts: True
+
+  tasks:
+  - name: install required packages
+    dnf:
+      name: ntp,git,golang,libvirt-devel
+      state: latest
