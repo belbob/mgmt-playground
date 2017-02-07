@@ -19,12 +19,11 @@ Vagrant.configure("2") do |config|
           domain.nested = true
           domain.volume_cache = 'none'
       end
-
       config.vm.provision "ansible" do |ansible|
-        ansible.playbook = "require_python2.yml"
+          ansible.playbook = "require_python2.yml"
       end
       node.vm.provision :ansible do |ansible|
-         ansible.playbook = "required_stuff.yml"
+          ansible.playbook = "required_stuff.yml"
       end
     end
   end
