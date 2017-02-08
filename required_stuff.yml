@@ -7,16 +7,19 @@
   tasks:
   - name: install required packages
     dnf:
-      name: ntp,git,golang,libvirt-devel
+      name: "{{ item }}"
       state: latest
-
-  - name: create gopath directory
-    file:
-      path: $HOME/gopath
-      state: directory
-      mode: 0755
-    become_user: vagrant
+    with_items:
+      - ntp
+      - git
+      - golang
+      - libvirt-devel
+      - mercurial
+      - golang-googlecode-tools-stringer
 
   - name: export GOPATH
-    shell: "export GOPATH=$HOME/gopath"
+    lineinfile:
+      dest: $HOME/.bashrc
+      insertafter:
+      line: 'export GOPATH=$HOME/gopath'
     become_user: vagrant

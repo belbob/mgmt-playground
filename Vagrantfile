@@ -3,7 +3,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "fedora/25-cloud-base"
-#  config.vm.synced_folder "userdata", "/home/vagrant/data", type: "sshfs"
+  
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+  config.vm.synced_folder "gopath", "/home/vagrant/gopath", type: "sshfs"
 
   config.hostmanager.manage_host = true
   config.hostmanager.manage_guest = true
