@@ -14,6 +14,7 @@ I use as host a Fedora/25-cloud-base machine, make sure you have installed :
 - vagrant
 - vagrant-libvirt
 - vagrant-hostmanager
+- vagrant-sshfs
 - ansible (ver. 2+)
 - git
 
@@ -38,7 +39,9 @@ $ git clone https://github.com/belbob/mgmt-playground.git my-mgmt-playground
 ```
 After cloning, it's best to remove the `.git` directory and initialise a new repository. The history of the code is most probably irrelevant for your mgmt-playground project...
 
-### Installation opennebula-cluster
+Create also a new directory "gopath" inside the folder "my-mgmt-playground",and use this as workdirectory for mgmt.
+
+### Installation mgmt-playground
 
 Open a terminal, go to a suitable directory to store this project and issue the following commands:
 
@@ -47,8 +50,15 @@ create the first mgmt-vm
 ```ShellSession
 $ vagrant up mgmt1
 ```
-
-after finishing mgmt1 you can start the other vms
+login after install:
+```ShellSession
+$ vagrant ssh mgmt1
+```
+download the mgmt code base as vagrant user inside mgmt1 vm:
+```ShellSession
+$ go get -u github.com/purpleidea/mgmt
+```
+after finishing mgmt1, logout mgmt1, you can start the other vms
 
 ```ShellSession
 $ vagrant up mgmt2
