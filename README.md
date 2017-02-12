@@ -5,7 +5,7 @@ This project sets up:
 
 * 3 virtual machines with Fedora/25-cloud-base
 
-This project is intended as a demo/playground for a mgmt-introductory , teaching git, vagrant and ansible, in de most simple way, and still useable in my classroom. Surely , this playbook can still be improved, but this way it is manageable in my classroom with my students.
+This project is intended as a demo/playground for a mgmt-introductory , teaching git, vagrant and ansible, in the most simple way, and still useable in my classroom. Surely , this playbook can still be improved, but this way it is manageable in my classroom with my students.
 
 ## Dependencies
 
