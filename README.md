@@ -9,7 +9,7 @@ This project is intended as a demo/playground for a mgmt-introductory , teaching
 
 ## Dependencies
 
-I use as host a Fedora/25-cloud-base machine, make sure you have installed :
+I use as host a Fedora 25 workstation, make sure you have installed :
 
 - vagrant
 - vagrant-libvirt
