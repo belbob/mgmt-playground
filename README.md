@@ -43,7 +43,7 @@ Create also a new directory "gopath" inside the folder "my-mgmt-playground",and 
 
 ### Installation mgmt-playground
 
-Open a terminal, go to a suitable directory to store this project and issue the following commands:
+Open a terminal, go to the "my-mgmt-playground" directory to store this project and issue the following commands:
 
 create the first mgmt-vm
 
@@ -58,7 +58,7 @@ download the mgmt code base as vagrant user inside mgmt1 vm:
 ```ShellSession
 $ go get -u github.com/purpleidea/mgmt
 ```
-after finishing mgmt1, logout mgmt1, you can start the other vms
+after finishing mgmt1, logout mgmt1, now you can start the other vms
 
 ```ShellSession
 $ vagrant up mgmt2
@@ -67,6 +67,11 @@ and
 ```ShellSession
 $ vagrant up mgmt3
 ```
+
+## how to use config-mgmt
+
+You find everything about config-mgmt:
+https://github.com/purpleidea/mgmt
 
 ## some issues
 
