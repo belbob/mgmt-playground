@@ -1,5 +1,5 @@
 # mgmt-playground
-This is an Ansible project with a development environment powered by Vagrant.
+This is an Ansible project with a development environment powered by Vagrant, to play with the next generation config management, config-mgmt. You can read more at the blog of James Shubin, see https://ttboj.wordpress.com/2016/01/18/next-generation-configuration-mgmt/
 
 This project sets up:
 
