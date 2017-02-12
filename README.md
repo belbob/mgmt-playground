@@ -70,7 +70,7 @@ $ vagrant up mgmt3
 
 ## how to use config-mgmt
 
-You find everything about config-mgmt at https://github.com/purpleidea/mgmt
+You find everything what you need about config-mgmt at https://github.com/purpleidea/mgmt
 
 ## some issues
 
